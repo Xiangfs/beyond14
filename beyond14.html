@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>beyond14</title>
+  <link href="beyond14.css" rel="stylesheet" type="text/css"/>
+  <script src="beyond14.js"></script>
+  <script src="animation.js"></script>
+  <script src="jquery-1.12.4.js"></script>
+ </head>
+ <body>
+	<div id="gameTop">
+		<div class="scoreContent">Score:<span id="score">0</span></div>
+		<ul class="helpfulItems">
+			<li class="itemCell" onclick="game.helpfulItemRefresh(this)">
+				<img src="./imgs/refresh_black.png" title="refresh current cell">
+			</li>
+			<li class="itemCell" onclick="game.helpfulItemRemove(this)">
+				<img src="./imgs/delete_black.png" title="delete a selected cell in Panel">
+			</li>
+		</ul>
+	</div>
+	<div id="Panel">
+		<!--grid-->
+		<!--cell-->
+		<div id="current">
+			<p>Current:</p>
+				<span id="currBlock" class="outGrid"></span>
+		</div>
+		<div id="next">
+			<p>Next:</p>
+		<span id="nextBlock" class="outGrid"></span>
+		</div>
+	</div>
+	<div id="gameOver">
+		<p>
+		Game Over!<br>
+		Score:<span id="final">0</span><br>
+		<a class="btn" onclick="game.start()">Play Again<a>
+		</p>
+	</div>
+ </body>
+</html>
