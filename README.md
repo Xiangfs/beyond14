@@ -1,10 +1,10 @@
-### beyond14
+# beyond14
 
 simple game similar to 2014
 
 for personal practice use, this game is made just for code practice
 
-# 本游戏没有最终目标~往更高的分数奋斗吧！\(≧▽≦)/
+## 本游戏没有最终目标~往更高的分数奋斗吧！\(≧▽≦)/
 
 
 ###（超越14）游戏规则：
