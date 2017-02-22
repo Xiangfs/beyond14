@@ -43,9 +43,17 @@ var game={
 				this.data[r][c]=0;
 			}
 		}
+		this.activeHelpfulItem();
 		this.firstNum();
 		this.firstNextNum();
 		this.updateView();
+	},
+	activeHelpfulItem:function() {
+		this.isRefreshed = false;
+		this.isRemoved = false;
+		this.canRemove = false;
+		$('.itemCell img')[0].src = './imgs/refresh_black.png';
+		$('.itemCell img')[1].src = './imgs/delete_black.png';
 	},
 	isGameOver:function(){
 		for(var r=0;r<this.RN;r++){
