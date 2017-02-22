@@ -74,6 +74,9 @@ var game={
 	},
 	firstNum:function(){
 		var currNum=Math.floor(Math.random()*6+1);
+		while( currNum === parseInt(currBlock.innerHTML)){
+			currNum=Math.floor(Math.random()*6+1);
+		}
 		currBlock.innerHTML=currNum;
 		currBlock.className="outGrid n"+currNum;
 	},
